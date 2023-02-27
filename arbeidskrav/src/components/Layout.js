@@ -5,7 +5,7 @@ export default function Layout() {
         <div id="container">
         <header>
             <Link to="/">
-                <h1>Matprat</h1>
+                <h1>Ressursarkiv</h1>
             </Link>
         </header>
             <main>
