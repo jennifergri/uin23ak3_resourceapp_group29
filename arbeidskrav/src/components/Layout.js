@@ -2,7 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 
 export default function Layout() {
     return (
-        <div id="container">
+        <div className="container">
         <header>
             <Link to="/">
                 <h1>Matprat</h1>
