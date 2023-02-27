@@ -1,12 +1,16 @@
+import Article from "./components/Article";
+import Meny from "./components/Meny";
+import Main from "./components/Main";
 
-import './App.css';
-import './css/main.css';
 
 function App() {
   return (
-    <div className="App">
-     
-    </div>
+    <>
+   <Meny />
+   <Article />
+   
+   </>
+
   );
 }
 
