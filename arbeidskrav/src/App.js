@@ -1,15 +1,21 @@
 import Article from "./components/Article";
-import Meny from "./components/Meny";
-import Main from "./components/Main";
+import Nav from "./components/Nav";
+import Header from  "./components/Header";
+
 
 
 function App() {
   return (
-    <>
-   <Meny />
+    <section>
+
+  <Header />
+    
+   <Nav />
+  
    <Article />
+ 
    
-   </>
+   </section>
 
   );
 }
