@@ -1,8 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-import './sass/main.scss';
-import './components/Main';
-
+import Article from "./components/Article";
+import Nav from "./components/Nav";
+import Header from "./components/Header";
 function App() {
   return (
     <section>
