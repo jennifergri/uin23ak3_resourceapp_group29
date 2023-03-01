@@ -3,12 +3,12 @@ import Header from  "./components/Header";
 import '../src/css';
 import Nav from "./components/Nav";
 
-function App({menyItems, index}) {
+function App({menyItems, index, title, url}) {
   return (
     <section>
       <Header />
       <Nav menyItems={menyItems} index={index} />
-      <Article />
+      <Article title={title} url={url}/>
     </section>
   );
 }
