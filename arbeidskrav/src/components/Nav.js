@@ -1,4 +1,4 @@
-export default function Nav({FunctionNav, menyItems, index}) {
+export default function Nav({FunctionNav}) {
 
 
     return (

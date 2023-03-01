@@ -5,10 +5,10 @@ import Layout from "./components/Layout";
 import './App.css';
 import './css/main.css';
 
-function App({menyItems, index, title, url}) {
+function App({FunctionNav, index, title, url}) {
   return (
     <Layout>
-      <Nav />
+      <Nav FunctionNav={FunctionNav}/>
       <Main />
       <Article />
     </Layout>
