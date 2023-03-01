@@ -4,11 +4,11 @@ import Header from  "./components/Header";
 import './sass/main.scss';
 
 
-function App() {
+function App({menyItems, index}) {
   return (
     <section>
       <Header />
-      <Nav />
+      <Nav menyItems={menyItems} index={index} />
       <Article />
     </section>
   );
