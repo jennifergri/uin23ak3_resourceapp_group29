@@ -5,11 +5,11 @@ import './App.css';
 import './css/main.css';
 
 
-function App() {
+function App({menyItems, index}) {
   return (
     <section>
       <Header />
-      <Nav />
+      <Nav menyItems={menyItems} index={index} />
       <Article />
     </section>
   );
