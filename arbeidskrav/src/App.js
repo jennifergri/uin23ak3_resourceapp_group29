@@ -2,14 +2,17 @@ import Article from "./components/Article";
 import Header from  "./components/Header";
 import '../src/css';
 import Nav from "./components/Nav";
+import Main from "./components/Main";
+import Layout from "./components/Layout";
 
 function App({menyItems, index, title, url}) {
   return (
-    <section>
+    <Layout>
       <Header />
-      <Nav menyItems={menyItems} index={index} />
-      <Article title={title} url={url}/>
-    </section>
+        <Nav />
+        <Main />
+        <Article />
+    </Layout>
   );
 }
 
