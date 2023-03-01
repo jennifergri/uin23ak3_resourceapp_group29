@@ -1,17 +1,21 @@
-export default function Nav (){
+export default function NavFunction({FunctionNav}) {
+
 
     return (
-    <nav className="faneMeny">
+        
+        <ul>
+            {FunctionNav.map((menyItems, index) =>(
+            <li key={index}><button onClick={index}>{menyItems.category}</button>
+               
+            </li>
 
-    </nav>
+            ))}
+
+        </ul>
 
     )
 }
 
-/* let meny =""
 
-resources.map((menyItem, index) => {
-    meny += `<a id="fane-knapp-${index}" onclick="tab('${index}')">${menyItem.category}</a>`
-    }) 
 
-document.querySelector("#faneMeny").innerHTML = meny */
+
