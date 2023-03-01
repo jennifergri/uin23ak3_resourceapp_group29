@@ -5,12 +5,12 @@ import './App.css';
 import './css/main.css';
 
 
-function App({menyItems, index}) {
+function App({menyItems, index, title, url}) {
   return (
     <section>
       <Header />
       <Nav menyItems={menyItems} index={index} />
-      <Article />
+      <Article title={title} url={url}/>
     </section>
   );
 }
