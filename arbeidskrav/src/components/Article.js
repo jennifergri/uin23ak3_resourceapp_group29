@@ -1,16 +1,15 @@
-export default function Article ({title, url}) {
-    return (
-        <article className="innhold">
-          <ul>
-            <li key={title}><a key={url}></a></li>
-          </ul>
-        </article>
-    )
+export default function Article () {
+    return ( 
 
-  /* resources.map((resources) => {
-    return (
-    )
-   }) */
-
-
+      //.map((title, url, cat) => (
+      {/* <article className="innhold">
+            <h3>{cat}</h3>
+              <ul>
+                <li key={title} />
+                <a key={url} />
+              </ul
+        </article> */}
+          
+      //  }
+      )
 }
