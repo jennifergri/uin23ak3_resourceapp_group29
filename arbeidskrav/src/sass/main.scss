@@ -26,7 +26,7 @@ body {
         }  
     }
 
-    .faneMeny nav{
+    .faneMeny {
         display: flex;
         flex-wrap: nowrap;
         gap: 1rem;
@@ -52,7 +52,7 @@ body {
         }
     }
 
-    .innhold article {
+    .innhold {
         border: 1px solid $Grey;
         border-top: 0;
         color: $DarkGrey;
@@ -73,7 +73,7 @@ body {
 
 @media (max-width: 800px) {
 
-    .faneMeny nav {
+    .faneMeny {
         gap: 0px;
         flex-flow: column nowrap;
 
