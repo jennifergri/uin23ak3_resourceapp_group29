@@ -1,10 +1,10 @@
-export default function Nav({FunctionNav}) {
+export default function Nav({FunctionNav, menyItems, index}) {
 
 
     return (
 
-        <></>
-        /* <ul>
+       
+         <ul>
             {FunctionNav.map((menyItems, index) =>(
             <li key={index}><button onClick={index}>{menyItems.category}</button>
                
@@ -12,7 +12,7 @@ export default function Nav({FunctionNav}) {
 
             ))}
 
-        </ul> */
+        </ul> 
 
     )
 }
