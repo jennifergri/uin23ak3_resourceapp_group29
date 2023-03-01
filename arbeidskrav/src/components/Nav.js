@@ -1,6 +1,10 @@
-export default function Nav({FunctionNav}) {
+import resources from "../resources/ressurser";
 
+export default function Nav({FunctionNav, menyItems}) {
 
+    const menyItems = resources
+
+    console.log(resources)
     return (
 
        
@@ -14,8 +18,14 @@ export default function Nav({FunctionNav}) {
 
         </ul> 
 
+
     )
+    
 }
+
+
+
+
 
 
 
