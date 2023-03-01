@@ -7,10 +7,9 @@ import Header from "./components/Header";
 function App({menyItems, index, title, url}) {
   return (
     <Layout>
-      <Header />
-        <Nav />
-        <Main />
-        <Article />
+      <Nav />
+      <Main />
+      <Article />
     </Layout>
   );
 }
