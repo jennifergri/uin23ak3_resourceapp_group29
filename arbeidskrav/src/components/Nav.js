@@ -1,4 +1,4 @@
-export default function NavFunction({FunctionNav}) {
+export default function Nav({FunctionNav}) {
 
 
     return (
