@@ -1,17 +1,17 @@
 import Article from "./components/Article";
 import Nav from "./components/Nav";
-import Header from  "./components/Header";
-import './App.css';
-import './css/main.css';
-
+import Main from "./components/Main";
+import Layout from "./components/Layout";
+import Header from "./components/Header";
 
 function App({menyItems, index, title, url}) {
   return (
-    <section>
+    <Layout>
       <Header />
-      <Nav menyItems={menyItems} index={index} />
-      <Article title={title} url={url}/>
-    </section>
+        <Nav />
+        <Main />
+        <Article />
+    </Layout>
   );
 }
 
