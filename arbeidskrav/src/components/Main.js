@@ -9,11 +9,9 @@ export default function Main() {
     function LinkPrint() {
         <LinkPrint />
 }
-    /*
+    
 
     return (
-        <>
-            <CatFilter={CatFilter} />
-        </>
-    ) */
+        
+    )
 }
