@@ -1,7 +1,8 @@
 import Article from "./components/Article";
 import Nav from "./components/Nav";
 import Header from  "./components/Header";
-import './sass/main.scss';
+import './App.css';
+import './css/main.css';
 
 
 function App() {
