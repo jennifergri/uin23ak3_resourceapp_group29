@@ -1,24 +1,35 @@
-import resources from "../resources/ressurser";
+import { useState } from "react"
+import resources from "../resources/ressurser"
 
-export default function Nav({FunctionNav}) {
 
-    const menyItems = resources
+let categories = resources.map(ressurs => ressurs.category)
+let menyItems = categories.filter((item,
+    index) => categories.indexOf(item) === index)
 
-    console.log(resources)
+export default function Nav() {
+
+    const [category, setCategory] = useState("html")
+
     return (
-
-       
          <ul>
-            {FunctionNav.map((menyItems, index) =>(
-            <li key={index}><button onClick={index}>{menyItems.category}</button>
-               
+            {menyItems.map((category, index) => {
+            return (
+            <>
+            <li key={index}>
+                <button onClick={() => setCategory(category)}>{category}</button>
             </li>
+            </>
+            )})}
 
-            ))}
+{
+                resources.filter(ressurs => ressurs.category === category).map(ressurs => {
+                    return (<p>
+                        {ressurs.title} : {ressurs.url}
+                    </p>)
+                })
+                }
 
         </ul> 
-
-
     )
     
 }
