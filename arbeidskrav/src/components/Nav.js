@@ -1,6 +1,6 @@
 import resources from "../resources/ressurser";
 
-export default function Nav({FunctionNav, menyItems}) {
+export default function Nav({FunctionNav}) {
 
     const menyItems = resources
 
