@@ -1,3 +1,5 @@
+import Nav from "./Nav";
+
 
 export default function Layout({children}) {
 
@@ -7,8 +9,7 @@ export default function Layout({children}) {
             <h1>Ressursarkiv</h1>
         </header>
 
-        <nav className="faneMeny">
-        </nav>
+        <Nav></Nav>
 
         <main>
             <article className="innhold">
