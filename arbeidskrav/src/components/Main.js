@@ -1,6 +1,6 @@
 import Article from "./Article";
 
-export default function Main() {
+/* export default function Main() {
 
     const CatFilter = (event) => {
         //setFilter(event.target.innerHTML)
@@ -14,4 +14,4 @@ export default function Main() {
     return (
         0
     )
-}
+} */
