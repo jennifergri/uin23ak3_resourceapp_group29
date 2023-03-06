@@ -1,7 +1,7 @@
-export default function Article () {
+export default function Article (data) {
     return ( 
 <></>
-      /* .map((title, url, cat) => (
+      /* .map((title, url, category) => (
       { <article className="innhold">
             <h3>{cat}</h3>
               <ul>

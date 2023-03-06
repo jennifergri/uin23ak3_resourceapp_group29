@@ -1,5 +1,6 @@
 import { useState } from "react"
 import resources from "../resources/ressurser"
+import Article from "./Article"
 
 
 let categories = resources.map(ressurs => ressurs.category)
@@ -23,9 +24,7 @@ export default function Nav() {
 
 {
                 resources.filter(ressurs => ressurs.category === category).map(ressurs => {
-                    return (<p>
-                        {ressurs.title} : {ressurs.url}
-                    </p>)
+                    return (<Article data={ressurs}></Article>)
                 })
                 }
 
