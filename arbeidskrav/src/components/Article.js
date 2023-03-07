@@ -1,4 +1,4 @@
-import resources from "../resources/ressurser"
+//import resources from "../resources/ressurser"
 
 export default function Article() {
     return ( 
