@@ -1,15 +1,19 @@
-export default function Article () {
-    return ( 
+import React from 'react';
 
-      //.map((title, url, cat) => (
-      {/* <article className="innhold">
-            <h3>{cat}</h3>
-              <ul>
-                <li key={title} />
-                <a key={url} />
-              </ul
-        </article> */}
-          
-      //  }
-      )
-}
+export default function Article(data) {
+  return ( 
+    <article className="innhold">
+            <ul>
+              <li>
+                {data?.data?.title}
+                <a href={data?.data?.url}>
+                  {data?.data?.title}
+                </a>
+              </li>
+            </ul>
+    </article> 
+    )
+  }
+
+        
+      

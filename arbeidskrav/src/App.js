@@ -1,17 +1,21 @@
-import Article from "./components/Article";
-import Nav from "./components/Nav";
-import Main from "./components/Main";
+import React from "react";
+import { Routes, Route, Outlet } from "react-router-dom";
 import Layout from "./components/Layout";
-import './App.css';
-import './css/main.css';
-
-function App({FunctionNav, index, title, url}) {
+import ArticleList from "./components/ArticleList";
+//I App.js filen er alt som skal rendres ut på nettsiden
+ 
+function App() {
   return (
+    <>
     <Layout>
-      <Nav FunctionNav={FunctionNav}/>
-      <Main />
-      <Article />
+      <Outlet />
     </Layout>
+
+    <Routes>
+      <Route index path="/" element={<ArticleList/>}/>
+      <Route path="/:category" element={<ArticleList/>} />
+    </Routes>
+    </>
   );
 }
 

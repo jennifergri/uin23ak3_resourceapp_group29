@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+        {/* 
+    Router ville ikke fungere uten BrowserRouter 
+    https://stackoverflow.com/questions/65425884/react-router-v6-error-useroutes-may-be-used-only-in-the-context-of-a-route 
+    */}
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
