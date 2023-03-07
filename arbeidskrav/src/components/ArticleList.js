@@ -1,3 +1,4 @@
+import React from 'react';
 import resources from "../resources/ressurser"
 import { useParams } from 'react-router-dom';
 import Article from "./Article";
@@ -10,13 +11,15 @@ export default function ArticleList() {
     // Hvis ingen kategori er i urlen/valgt så skal html vises default
     if(category == null) category = "html"
 
-    /* 
-    */
-   
+    let categories = resources.filter(res => res.category === category)
+
       return (
-        resources.filter(ressurs => ressurs.category === category).map((ressurs, index) => {
-            return (<Article key={index} data={ressurs}></Article>)
-        })
+        <>
+        <h3>{category}</h3>
+        {categories.map((ressurs, index) => {
+          return (<Article key={index} data={ressurs}></Article>)
+        })}
+        </>
       );
     }
 

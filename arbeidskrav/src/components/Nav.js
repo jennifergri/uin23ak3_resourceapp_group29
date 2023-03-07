@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import resources from "../resources/ressurser"
+import React from 'react';
 
 // Henter ut alle kategorier fra ressurs listen
 let categories = resources.map(ressurs => ressurs.category)
