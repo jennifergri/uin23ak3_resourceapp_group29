@@ -11,7 +11,7 @@ export default function Layout({children}) {
 
         <Nav></Nav>
 
-        <main>
+        <main className="main-innhold">
             <article className="innhold">
                 {children}
             </article>

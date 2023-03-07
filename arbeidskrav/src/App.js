@@ -2,6 +2,9 @@ import React from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
 import Layout from "./components/Layout";
 import ArticleList from "./components/ArticleList";
+import './App.css';
+import './sass/main.scss';
+
 //I App.js filen er alt som skal rendres ut på nettsiden
  
 function App() {

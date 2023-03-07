@@ -14,12 +14,12 @@ export default function ArticleList() {
     let categories = resources.filter(res => res.category === category)
 
       return (
-        <>
-        <h3>{category}</h3>
-        {categories.map((ressurs, index) => {
-          return (<Article key={index} data={ressurs}></Article>)
-        })}
-        </>
+        <main className='main-innhold'>
+          <h3>{category}</h3>
+          {categories.map((ressurs, index) => {
+            return (<Article key={index} data={ressurs}></Article>)
+          })}
+        </main>
       );
     }
 

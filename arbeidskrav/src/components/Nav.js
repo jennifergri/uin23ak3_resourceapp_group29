@@ -12,7 +12,7 @@ export default function Nav() {
 
     // Mapper om alle de unike kategoriene til Link componenter med link til de ulike kategoriene som stemmer overens med Router
     return (
-        <nav id="faneMeny">
+        <nav className="faneMeny">
             <ul>
             {menyItems.map((category, index) => {
                 return (
