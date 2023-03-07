@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default function Article(props) {
+export default function Article(data) {
   return ( 
     <article className="innhold">
             <ul>
               <li>
-                {props?.data?.title}
-                <a href={props?.data?.url}>
-                  {props?.data?.title}
+                {data?.data?.title}
+                <a href={data?.data?.url}>
+                  {data?.data?.title}
                 </a>
               </li>
             </ul>
