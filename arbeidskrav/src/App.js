@@ -1,26 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import './sass/main.scss';
-import './components/Main';
-
+import React from "react";
+import { Routes, Route, Outlet } from "react-router-dom";
+import Layout from "./components/Layout";
+import ArticleList from "./components/ArticleList";
+//I App.js filen er alt som skal rendres ut på nettsiden
+ 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Layout>
+      <Outlet />
+    </Layout>
+
+    <Routes>
+      <Route index path="/" element={<ArticleList/>}/>
+      <Route path="/:category" element={<ArticleList/>} />
+    </Routes>
+    </>
   );
 }
 
