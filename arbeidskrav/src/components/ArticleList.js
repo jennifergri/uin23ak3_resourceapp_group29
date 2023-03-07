@@ -9,16 +9,14 @@ export default function ArticleList() {
 
     // Hvis ingen kategori er i urlen/valgt så skal html vises default
     if(category == null) category = "html"
+
+    /* 
+    */
    
       return (
         resources.filter(ressurs => ressurs.category === category).map((ressurs, index) => {
             return (<Article key={index} data={ressurs}></Article>)
-            //return <p key={index}>{ressurs.title}: {ressurs.url}</p>
         })
-      );  
+      );
+    }
 
-
-
-} 
-        
-  

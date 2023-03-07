@@ -1,7 +1,5 @@
 import { Routes, Route, Outlet } from "react-router-dom";
 import Article from "./components/Article";
-import Nav from "./components/Nav";
-// import Main from "./components/Main";
 import Layout from "./components/Layout";
 import ArticleList from "./components/ArticleList";
 //importere resourses?

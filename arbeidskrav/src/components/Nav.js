@@ -7,8 +7,6 @@ let categories = resources.map(ressurs => ressurs.category)
 let menyItems = categories.filter((item,
     index) => categories.indexOf(item) === index)
 
-
-
 export default function Nav() {
 
     // Mapper om alle de unike kategoriene til Link componenter med link til de ulike kategoriene som stemmer overens med Router
