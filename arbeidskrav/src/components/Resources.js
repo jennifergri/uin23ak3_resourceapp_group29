@@ -8,3 +8,9 @@ export default function Resources() {
         </ul>
     )
 }
+
+//Kilder:
+// LMS
+// Forelesninger
+// Studentassistenter
+// Samboeren til Marianne 

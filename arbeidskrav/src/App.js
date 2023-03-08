@@ -23,3 +23,9 @@ function App() {
 }
 
 export default App;
+
+//Kilder:
+// LMS
+// Forelesninger
+// Studentassistenter
+// Samboeren til Marianne 
