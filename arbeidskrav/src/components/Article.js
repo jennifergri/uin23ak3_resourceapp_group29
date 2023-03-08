@@ -14,5 +14,9 @@ export default function Article(data) {
     )
   }
 
-        
+//Kilder:
+// LMS
+// Forelesninger
+// Studentassistenter
+// Samboeren til Marianne      
       

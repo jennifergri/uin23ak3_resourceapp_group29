@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import resources from "../resources/ressurser"
 import React from 'react';
+import { NavLink } from "react-router-dom";
 
 // Henter ut alle kategorier fra ressurs listen
 let categories = resources.map(ressurs => ressurs.category)
@@ -10,6 +10,8 @@ let menyItems = categories.filter((item,
 
 export default function Nav() {
 
+   let activeClassName = 'active';
+
     // Mapper om alle de unike kategoriene til Link componenter med link til de ulike kategoriene som stemmer overens med Router
     return (
         <nav className="faneMeny">
@@ -17,20 +19,21 @@ export default function Nav() {
             {menyItems.map((category, index) => {
                 return (
                 <li key={index}>
-                    <Link to={category}>{category}</Link>
+                    <NavLink className={({ isActive }) => isActive ? activeClassName : undefined} to={category}>{category}</NavLink>
                 </li>
-            )})
+                )})
             }
-        </ul>
+            </ul>
         </nav> 
-    )
-    
+    )  
 }
+    console.log('active')
 
 
-
-
-
-
-
+//Kilder:
+// https://stackoverflow.com/questions/34418254/how-do-i-add-an-active-class-to-a-link-from-react-router
+// LMS
+// Forelesninger
+// Studentassistenter
+// Samboeren til Marianne 
 

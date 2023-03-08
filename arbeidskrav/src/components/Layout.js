@@ -19,3 +19,9 @@ export default function Layout({children}) {
       </>
     )
 }
+
+//Kilder:
+// LMS
+// Forelesninger
+// Studentassistenter
+// Samboeren til Marianne 

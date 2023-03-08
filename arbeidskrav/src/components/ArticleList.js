@@ -23,3 +23,8 @@ export default function ArticleList() {
       );
     }
 
+//Kilder:
+// LMS
+// Forelesninger
+// Studentassistenter
+// Samboeren til Marianne 

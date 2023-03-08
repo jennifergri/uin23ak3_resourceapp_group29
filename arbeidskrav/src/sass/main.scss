@@ -67,7 +67,7 @@ body {
 
     .main-innhold{
         border: 1px solid $Grey;
-        border-top: 0px solid;
+        border-top: 0px;
         color: $DarkGrey;
 
         h3{
@@ -82,16 +82,28 @@ body {
             
         }
     }
-}
+    
+    @media (max-width: 800px) {
 
-@media (max-width: 800px) {
-
-    .faneMeny {
-        gap: 0px;
-        flex-flow: column nowrap;
-
-        a {
-            font-size: 1.2rem;
+        .faneMeny {
+        
+            ul{
+                margin: 0;
+                width: 100%;
+                
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                        
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }
+
