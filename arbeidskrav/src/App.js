@@ -1,26 +1,31 @@
-import logo from './logo.svg';
+import React from "react";
+import { Routes, Route, Outlet } from "react-router-dom";
+import Layout from "./components/Layout";
+import ArticleList from "./components/ArticleList";
 import './App.css';
-import './css/main.css';
+import './sass/main.scss';
 
+//I App.js filen er alt som skal rendres ut på nettsiden
+ 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Layout>
+      <Outlet />
+    </Layout>
+
+    <Routes>
+      <Route index path="/" element={<ArticleList/>}/>
+      <Route path="/:category" element={<ArticleList/>} />
+    </Routes>
+    </>
   );
 }
 
 export default App;
+
+//Kilder:
+// LMS
+// Forelesninger
+// Studentassistenter
+// Samboeren til Marianne 
